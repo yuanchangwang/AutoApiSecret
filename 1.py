@@ -43,9 +43,11 @@ def main():
     'Content-Type':'application/json'
     }
     try:
+        time.sleep(30)
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
             print("1调用成功"+str(num1)+'次')
+            time.sleep(2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
             num1+=1
             print("2调用成功"+str(num1)+'次')
@@ -54,6 +56,7 @@ def main():
             print('3调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
+            time.sleep(3)
             print('4调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
@@ -80,5 +83,6 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(3):
+for _ in range(30):
     main()
+    time.sleep(30)
