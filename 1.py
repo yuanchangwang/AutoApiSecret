@@ -43,46 +43,151 @@ def main():
     'Content-Type':'application/json'
     }
     try:
-        time.sleep(30)
+        time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
             print("1调用成功"+str(num1)+'次')
-            time.sleep(2)
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive',headers=headers).status_code == 200:
             num1+=1
             print("2调用成功"+str(num1)+'次')
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/drive/root',headers=headers).status_code == 200:
             num1+=1
             print('3调用成功'+str(num1)+'次')
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
-            time.sleep(3)
+            time.sleep(0.2)
             print('4调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
-            print('5调用成功'+str(num1)+'次')    
+            print('5调用成功'+str(num1)+'次')   
+            time.sleep(0.2) 
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
-            print('6调用成功'+str(num1)+'次')    
+            print('6调用成功'+str(num1)+'次') 
+            time.sleep(0.2)   
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages/delta',headers=headers).status_code == 200:
             num1+=1
             print('7调用成功'+str(num1)+'次')
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
             num1+=1
             print('8调用成功'+str(num1)+'次')
+            time.sleep(0.2)
         if req.get(r'https://api.powerbi.com/v1.0/myorg/apps',headers=headers).status_code == 200:
             num1+=1
             print('8调用成功'+str(num1)+'次') 
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
             print('9调用成功'+str(num1)+'次')
+            time.sleep(0.2)
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('10调用成功'+str(num1)+'次')
             print('此次运行结束时间为 :', localtime)
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/directReports',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/beta/me/profile',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/beta/me/insights/trending',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/directReports',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/users',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/beta/me/planner/tasks',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/groups',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/beta/me/findRooms',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/contacts',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/recent',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/sharedWithMe',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/schemaExtensions',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/onenote/notebooks',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/sites/root',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/sites/root/drives',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/sites/root/lists',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/v1.0/applications?$count=true',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+        if req.get(r'https://graph.microsoft.com/beta/applicationTemplates',headers=headers).status_code == 200:
+            num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
+                    if req.get(r'https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorgroups',headers=headers).status_code == 200:
+                num1+=1
+            print("1调用成功"+str(num1)+'次')
+            time.sleep(0.2)
     except:
         print("pass")
         pass
 for _ in range(30):
     main()
-    time.sleep(30)
+    time.sleep(0.2)
