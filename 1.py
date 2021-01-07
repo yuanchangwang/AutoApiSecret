@@ -181,8 +181,8 @@ def main():
             num1+=1
             print("1调用成功"+str(num1)+'次')
             time.sleep(0.2)
-                    if req.get(r'https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorgroups',headers=headers).status_code == 200:
-                num1+=1
+        if req.get(r'https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorgroups',headers=headers).status_code == 200:
+            num1+=1
             print("1调用成功"+str(num1)+'次')
             time.sleep(0.2)
     except:
