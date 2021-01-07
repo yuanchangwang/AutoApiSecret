@@ -188,6 +188,6 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(30):
+for _ in range(3000):
     main()
-    time.sleep(0.2)
+    time.sleep(0.8)
